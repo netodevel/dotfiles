@@ -1,0 +1,29 @@
+let mapleader=","
+set hlsearch
+set scrolloff=3
+set ignorecase smartcase
+set showmode
+set history=1000
+
+set NERDTree
+
+map <leader>n :NERDTree<CR>
+nnoremap <leader>Q :action ReopenClosedTab<cr>
+nnoremap <leader>q :action CloseContent<cr>
+nnoremap <leader>d :action ToggleLineBreakpoint<cr>
+nnoremap <c-d> :action Debug<cr>
+nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-h> <c-w>h
+nnoremap <c-k> <c-w>k
+
+
+nnoremap <s-tab> gT
+nnoremap <leader>g :action FindUsages<cr>
+nnoremap <s-q> gt
+nnoremap <leader>r :action Rename<cr>
+nnoremap <leader>s :action Find<cr>
+nnoremap <leader>t :action ActivateTerminalToolWindow<cr>
+
+
+nnoremap nd :action NewFolder<cr>

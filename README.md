@@ -1,1 +1,1 @@
-# ideavimrc
+# dotfiles

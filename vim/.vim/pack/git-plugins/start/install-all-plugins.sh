@@ -1,0 +1,9 @@
+git clone https://github.com/terryma/vim-multiple-cursors
+git clone https://github.com/jiangmiao/auto-pairs
+git clone https://github.com/sheerun/vim-polyglot
+git clone https://github.com/dense-analysis/ale
+git clone https://github.com/vim-airline/vim-airline
+git clone https://github.com/preservim/nerdcommenter
+git clone https://github.com/rafi/awesome-vim-colorschemes
+git clone https://github.com/mhinz/vim-startify
+git clone https://github.com/ryanoasis/vim-devicons

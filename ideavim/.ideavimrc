@@ -1,4 +1,5 @@
 let mapleader=","
+
 set hlsearch
 set scrolloff=3
 set ignorecase smartcase
@@ -22,11 +23,21 @@ nnoremap <leader>g :action FindUsages<cr>
 nnoremap <s-q> gt
 nnoremap <leader>r :action Rename<cr>
 nnoremap <leader>s :action Find<cr>
-nnoremap <leader>t :action ActivateTerminalToolWindow<cr>
+nnoremap <leader>tm :action ActivateTerminalToolWindow<cr>
 
 nnoremap nd :action NewFolder<cr>
 nnoremap <leader>tt :action GotoTest<cr>
 nnoremap <leader>r :action RunClass<cr>
 nnoremap <leader>ss :action Stop<cr>
 nnoremap <leader>sb :nohlsearch<cr>
+nnoremap <space>rr :action RenameElement<cr>
+
+
+nnoremap <space>t :action FileStructurePopup<cr>
+nnoremap <space>k :action HighlightUsagesInFile<cr>
+
+nnoremap <s-Up> :action MethodUp<cr>
+nnoremap <s-Down> :action MethodDown<cr>
+
+
 

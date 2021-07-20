@@ -31,7 +31,7 @@ nnoremap <leader>r :action RunClass<cr>
 nnoremap <leader>ss :action Stop<cr>
 nnoremap <leader>sb :nohlsearch<cr>
 nnoremap <space>rr :action RenameElement<cr>
-
+nnoremap <leader>ff :action SelectInProjectView<cr>
 
 nnoremap <space>t :action FileStructurePopup<cr>
 nnoremap <space>k :action HighlightUsagesInFile<cr>
@@ -39,5 +39,6 @@ nnoremap <space>k :action HighlightUsagesInFile<cr>
 nnoremap <s-Up> :action MethodUp<cr>
 nnoremap <s-Down> :action MethodDown<cr>
 
+nnoremap <C-n> :action NewClass <cr>
 
 

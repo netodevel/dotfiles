@@ -1,0 +1,7 @@
+---
+- name: Configure my development setup
+  hosts: localhost
+  become: true
+  roles:
+    - { role: defaults, tags: ['defaults'] } 
+    - { role: node, tags: ['node'] } 

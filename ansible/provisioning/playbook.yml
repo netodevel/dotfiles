@@ -5,3 +5,4 @@
   roles:
     - { role: defaults, tags: ['defaults'] } 
     - { role: node, tags: ['node'] } 
+    - { role: docker, tags: ['docker'] } 

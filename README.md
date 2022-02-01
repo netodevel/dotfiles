@@ -19,6 +19,10 @@ sudo chmod +x install_ansible.sh
 ./install_ansible.sh
 ```
 
+### ansible setup
+
+ansible-galaxy install -r requirements.yml
+
 ### run ansbile tasks
 
 ```sh

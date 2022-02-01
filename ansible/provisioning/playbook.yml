@@ -1,8 +1,41 @@
 ---
-- name: Configure my development setup
+- name: Configure my development environment
   hosts: localhost
   become: true
   roles:
     - { role: defaults, tags: ['defaults'] } 
     - { role: node, tags: ['node'] } 
     - { role: docker, tags: ['docker'] } 
+    - role: comcast.sdkman
+      sdkman_user: netodevel
+      sdkman_group: netodevel
+      tags: ['sdkman']
+      sdkman_auto_answer: true
+      sdkman_update: true
+      sdkman_uninstall_packages:
+        - { candidate: groovy, version: 1.8.9 }
+      sdkman_install_packages:
+        - { candidate: java, version: 11.0.12-open }
+        - { candidate: gradle, version: '3.5' }
+        - { candidate: maven, version: 3.5.0 }
+      sdkman_defaults:
+        gradle: '3.5'
+        maven: 3.3.9
+        java: 11.0.12-open
+      sdkman_flush_caches_before:
+        - temp
+      sdkman_flush_caches_after:
+        - archives
+        - broadcast
+        - candidates
+        - temp
+      sdkman_offline_mode: false
+      sdkman_update_alternatives:
+        - candidate: java
+          name: java
+          link: /usr/bin/java
+        - candidate: java
+          name: javac
+          link: /usr/bin/javac
+      
+    

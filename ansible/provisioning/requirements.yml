@@ -1,0 +1,4 @@
+---
+roles:
+  - name: comcast.sdkman
+    version: 1.7.0

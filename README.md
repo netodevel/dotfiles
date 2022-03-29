@@ -1,30 +1,26 @@
-# dotfiles
+<p align="center">
+  <h2 align="center">netodevel dotfiles</h2>
+  <p align="center">Config files for ideavim, vim, vscode, tmux, wsl, ansible and more</p>
+</p>
 
-sudo chown -R $USER ansible/
 
-### wsl setup
+### Dependencies
 
-```sh
-exec wsl/setup_wsl.ps1
-sudo apt-get install dos2unix
+    - python3
 
-sudo dos2unix ansible/install_ansible.sh
-sudo chmod +x install_ansible.sh
-./install_ansible.sh
-```
-### without wsl
+#### Install Ansible
 
 ```sh
 sudo chmod +x install_ansible.sh
 ./install_ansible.sh
 ```
 
-### ansible setup
-
+#### Ansible dependencies
+```sh
 ansible-galaxy install -r requirements.yml
+```
 
-### run ansbile tasks
-
+#### Run Tasks
 ```sh
 ansible-playbook ansible/provisioning/playbook.yml --tag "tags_here"
 ```

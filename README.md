@@ -15,6 +15,11 @@ sudo chmod +x install_ansible.sh
 ./install_ansible.sh
 ```
 
+**macosx**
+```
+brew install ansible
+```
+
 #### Ansible dependencies
 ```sh
 ansible-galaxy install -r requirements.yml

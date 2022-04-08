@@ -6,6 +6,7 @@
     - { role: defaults, tags: ['defaults'] } 
     - { role: node, tags: ['node'] } 
     - { role: docker, tags: ['docker'] } 
+    - { role: macos, tags: ['macos'] } 
     - role: comcast.sdkman
       sdkman_user: netodevel
       sdkman_group: netodevel

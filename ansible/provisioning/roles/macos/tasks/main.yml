@@ -1,0 +1,7 @@
+- name: Installing Homebrew Packages
+  become: yes
+  become_flags: -i
+  become_user: wesley
+  homebrew:
+    name: "{{ brew_packages }}"
+    state: present

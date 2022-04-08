@@ -1,0 +1,23 @@
+---
+brew_packages:
+  - docker
+  - firefox
+  - google-chrome
+  - iterm2
+  - slack
+  - spotify
+  - visual-studio-code
+  - autoconf
+  - bash-completion
+  - boot2docker
+  - docker-compose
+  - docker-machine
+  - go
+  - terraform
+  - terraform-inventory
+  - terraform-provisioner-ansible
+  - tmux
+  - tree
+  - wget
+  - zsh
+  - zsh-syntax-highlighting

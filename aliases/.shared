@@ -1,0 +1,8 @@
+# alias for docker
+alias dup="docker-compose up"
+
+# alias for maven
+alias mci="mvn clean install"
+alias build="mvn clean install -DskipTests"
+alias test="mvn clean test"
+alias gbuild="mvn clean install -Pnative -Dquarkus.native.container-build=true"

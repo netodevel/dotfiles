@@ -1,4 +1,5 @@
-let mapleader=","
+let mapleader=" "
+nnoremap <SPACE> <Nop>
 
 set hlsearch
 set scrolloff=3
@@ -40,5 +41,7 @@ nnoremap <s-Up> :action MethodUp<cr>
 nnoremap <s-Down> :action MethodDown<cr>
 
 nnoremap <C-n> :action NewClass <cr>
+
+inoremap jj <Esc>
 
 

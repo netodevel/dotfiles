@@ -1,7 +1,7 @@
 - name: Install NodeJS
   become: yes
   become_flags: -i
-  become_user: netodevel
+  become_user: jose-da-silva-neto
   block:
     - name: Install nvm
       ansible.builtin.shell: >
@@ -29,7 +29,7 @@
 
     - name: Install node and set version
       become: yes
-      become_user: netodevel
+      become_user: jose-da-silva-neto
       shell: "source $HOME/.nvm/nvm.sh && nvm install {{node.version}} && nvm alias default {{node.version}}" 
       args:
         executable: /bin/bash

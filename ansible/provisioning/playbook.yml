@@ -1,12 +1,15 @@
 ---
 - name: Configure my development environment
   hosts: localhost
+  remote_user: jose-da-silva-neto
   become: true
+  become_user: jose-da-silva-neto
   roles:
     - { role: defaults, tags: ['defaults'] } 
     - { role: node, tags: ['node'] } 
     - { role: docker, tags: ['docker'] } 
     - { role: gantsign.intellij, tags: ['javaide'] } 
+    - { role: role-install-gcloud, remote_user: jose-da-silva-neto, gather_facts: yes, tags: ['gcloud'] } 
     - role: comcast.sdkman
       sdkman_user: jose-da-silva-neto
       sdkman_group: jose-da-silva-neto

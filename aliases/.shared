@@ -1,5 +1,7 @@
 # alias for docker
-alias dup="docker-compose up"
+alias dup="docker-compose up -d"
+alias dd="docker-compose down"
+alias dps="docker ps"
 
 # alias for maven
 alias mci="mvn clean install"
